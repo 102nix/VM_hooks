@@ -1,10 +1,9 @@
 import React from 'react';
 import SmallTitle from '../../common/typografy/smallTitle';
 
-export const withLogin = (Component) => (props) => {
 
+export const withLogin = (Component) => (props) => {
   const isLogin = localStorage.getItem('auth') 
-  
   return (
     <>
       {isLogin ? (
